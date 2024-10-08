@@ -12,7 +12,7 @@
     <div class="container container1">
       <img src="./assets/img/laptop-gamer.png" alt="">
       <p>Laptop Gamer AMD</p>
-      <input type="number">
+      <input type="number" min="0">
       <select name="" id="select01">
         <option value="gray">Gris</option>
         <option value="white">Blanco</option>
@@ -25,7 +25,7 @@
         color = document.querySelector('#select01')
         resultado = Number(precio.innerHTML) * Number(numero.value)
         total = document.querySelector('.total')
-        total.innerHTML = resultado
+        total.innerHTML = resultado.toLocaleString('es-CL')
         cantidad = document.querySelector('.cantidad')
         cantidad.innerHTML = numero.value
         pincolor = document.querySelector('.pinColor')
