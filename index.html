@@ -21,19 +21,21 @@
       <p>Precio $ <span class="valor">400000</span></p>
       <button class="btn" onclick="
         precio = document.querySelector('.valor')
-        cantidad = document.querySelector('input')
+        numero = document.querySelector('input')
         color = document.querySelector('#select01')
-        total = Number(precio.innerHTML) * Number(cantidad.value)
-        console.log(Number(precio.innerHTML))
-        console.log(Number(cantidad.value))
-        console.log(color.value)
-        console.log(total)
+        resultado = Number(precio.innerHTML) * Number(numero.value)
+        total = document.querySelector('.total')
+        total.innerHTML = resultado
+        cantidad = document.querySelector('.cantidad')
+        cantidad.innerHTML = numero.value
+        pincolor = document.querySelector('.pinColor')
+        pincolor.style.backgroundColor = color.value
       ">Calcular Total</button>
     </div>
 
     <div class="container container2">
-      <p>Total $ <span>0</span></p>
-      <p>Cantidad: <span>0</span></p>
+      <p>Total $ <span class="total">0</span></p>
+      <p>Cantidad: <span class="cantidad">0</span></p>
       <div class="bx-color">
         <p>Color </p>
         <p class="pinColor"></p>
