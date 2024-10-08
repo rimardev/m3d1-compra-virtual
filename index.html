@@ -18,8 +18,17 @@
         <option value="white">Blanco</option>
         <option value="black">Negro</option>
       </select>
-      <p>Precio $ 400.000</p>
-      <button class="btn">Calcular Total</button>
+      <p>Precio $ <span class="valor">400000</span></p>
+      <button class="btn" onclick="
+        precio = document.querySelector('.valor')
+        cantidad = document.querySelector('input')
+        color = document.querySelector('#select01')
+        total = Number(precio.innerHTML) * Number(cantidad.value)
+        console.log(Number(precio.innerHTML))
+        console.log(Number(cantidad.value))
+        console.log(color.value)
+        console.log(total)
+      ">Calcular Total</button>
     </div>
 
     <div class="container container2">
