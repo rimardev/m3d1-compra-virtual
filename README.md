@@ -10,3 +10,5 @@ Los usuarios podrán interactuar con la tarjeta de producto de las siguientes ma
 
 - Ingresar la cantidad y el color del producto mediante inputs.
 - Al presionar el botón "Calcular Total", se debe mostrar el total a pagar, cantidad de productos y el color especificado.
+
+![screenshot](https://github.com/rimardev/m3d1-compra-virtual/blob/main/assets/img/screenshot.jpg)
